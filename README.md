@@ -8,7 +8,7 @@ Import it into maven as so:
 
 ```xml
 <dependency>
-	<groupId>com.flextrade.kfixture</groupId>
+	<groupId>com.flextrade.jfixture</groupId>
 	<artifactId>kfixture</artifactId>
 	<version>1.0.0</version>
 	<scope>test</scope>
