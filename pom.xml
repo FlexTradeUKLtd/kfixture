@@ -6,7 +6,7 @@
 
     <groupId>com.flextrade.jfixture</groupId>
     <artifactId>kfixture</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.1.0</version>
 
     <name>KFixture</name>
     <description>KFixture is a wrapper around JFixture providing a mode Kotlin friendly interface</description>
