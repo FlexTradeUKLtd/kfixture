@@ -10,6 +10,7 @@
 
     <name>KFixture</name>
     <description>KFixture is a wrapper around JFixture providing a mode Kotlin friendly interface</description>
+    <url>https://github.com/FlexTradeUKLtd/kfixture</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
