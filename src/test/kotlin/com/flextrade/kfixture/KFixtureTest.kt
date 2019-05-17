@@ -1,10 +1,5 @@
 package com.flextrade.kfixture
 
-import com.flextrade.jfixture.JFixture
-import com.flextrade.jfixture.customisation.Customisation
-import com.nhaarman.mockitokotlin2.doReturn
-import com.nhaarman.mockitokotlin2.mock
-import com.nhaarman.mockitokotlin2.verify
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
@@ -46,4 +41,5 @@ class KFixtureTest {
         assertNotNull(objectFixture.cyclicReference)
         assertNull(objectFixture.cyclicReference!!.cyclicReference)
     }
+
 }

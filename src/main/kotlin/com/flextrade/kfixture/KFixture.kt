@@ -2,7 +2,6 @@ package com.flextrade.kfixture
 
 import com.flextrade.jfixture.FluentCustomisation
 import com.flextrade.jfixture.JFixture
-import com.flextrade.jfixture.customisation.Customisation
 
 class KFixture(val jFixture: JFixture = JFixture(), customiser: FluentCustomisation.() -> Unit = { }) : FluentCustomisation by jFixture.customise() {
     init {
