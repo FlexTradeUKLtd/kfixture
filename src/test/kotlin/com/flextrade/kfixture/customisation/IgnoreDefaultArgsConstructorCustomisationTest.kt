@@ -8,8 +8,9 @@ class IgnoreDefaultArgsConstructorCustomisationTest {
 
     @Test
     fun `should use constructor ignoring default arguments`() {
-        val kFixture = KFixture()
-                .customise(IgnoreDefaultArgsConstructorCustomisation())
+        val kFixture = KFixture {
+            add(IgnoreDefaultArgsConstructorCustomisation())
+        }
 
         val fixture = kFixture<Defaulted>()
 

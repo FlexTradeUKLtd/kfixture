@@ -17,9 +17,4 @@ class KFixture(val jFixture: JFixture = JFixture(), customiser: FluentCustomisat
             where T : Number,
                   T : Comparable<T> =
             jFixture.create().inRange(T::class.java, range.start, range.endInclusive)!!
-
-    fun customise(customisation: Customisation): KFixture {
-        jFixture.customise(customisation)
-        return this
-    }
 }

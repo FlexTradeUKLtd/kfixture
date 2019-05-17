@@ -46,16 +46,4 @@ class KFixtureTest {
         assertNotNull(objectFixture.cyclicReference)
         assertNull(objectFixture.cyclicReference!!.cyclicReference)
     }
-
-    @Test
-    fun `customise should customise jFixture`() {
-        val customisation: Customisation = mock()
-        val jFixture: JFixture = mock {
-            on { customise() } doReturn mock()
-        }
-
-        KFixture(jFixture).customise(customisation)
-
-        verify(jFixture).customise(customisation)
-    }
 }
