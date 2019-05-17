@@ -1,5 +1,10 @@
 package com.flextrade.kfixture
 
+import com.flextrade.jfixture.JFixture
+import com.flextrade.jfixture.customisation.Customisation
+import com.nhaarman.mockitokotlin2.doReturn
+import com.nhaarman.mockitokotlin2.mock
+import com.nhaarman.mockitokotlin2.verify
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
@@ -42,4 +47,15 @@ class KFixtureTest {
         assertNull(objectFixture.cyclicReference!!.cyclicReference)
     }
 
+    @Test
+    fun `customise should customise jFixture`() {
+        val customisation: Customisation = mock()
+        val jFixture: JFixture = mock {
+            on { customise() } doReturn mock()
+        }
+
+        KFixture(jFixture).customise(customisation)
+
+        verify(jFixture).customise(customisation)
+    }
 }

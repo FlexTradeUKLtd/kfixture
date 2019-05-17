@@ -44,3 +44,14 @@ val kFixture = KFixture {
     circularDependencyBehaviour().omitSpecimen()
 }
 ``` 
+
+KFixture-specific customisations can be added by calling `customise` on the KFixture instance itself
+
+#### Ignoring default arguments on constructors
+
+```kotlin
+val kFixture = KFixture()
+        .customise(IgnoreDefaultArgsConstructorCustomisation())
+```
+
+To fixture classes where every argument has a default value, use this customisation. This will apply to all fixtures generated using this instance.
