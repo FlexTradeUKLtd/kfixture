@@ -1,7 +1,8 @@
 if [[ ${TRAVIS_PULL_REQUEST} = 'false' ]];
 then
-	echo $CI_DEPLOY_USERNAME
-    mvn deploy --settings ./settings.xml;
+    gpg --version
+	  gpg --import flexUK-private-key.gpg
+    mvn clean deploy -P sign-artifacts --settings ./settings.xml;
 else
     mvn clean verify;
 fi
