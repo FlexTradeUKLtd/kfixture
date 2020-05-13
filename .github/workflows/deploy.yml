@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - master
-      - feature/GitlabActions
     tags:
-      -v*
+      - v*
 
 
 jobs:
