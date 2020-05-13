@@ -2,7 +2,11 @@ name: Deploy
 
 on:
   push:
-    branches: [ master, feature/GitlabActions ]
+    branches:
+      - master
+      - feature/GitlabActions
+    tags:
+      -v*
 
 
 jobs:
