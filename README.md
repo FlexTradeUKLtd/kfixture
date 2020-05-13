@@ -2,7 +2,7 @@
 
 KFixture is a Kotlin wrapper around [JFixture](https://github.com/FlexTradeUKLtd/jfixture).
 
-[![Build Status](https://travis-ci.org/FlexTradeUKLtd/kfixture.svg)](https://travis-ci.org/FlexTradeUKLtd/kfixture)
+![Build Status](https://github.com/FlexTradeUKLtd/kfixture/workflows/Build%20and%20test/badge.svg)
 
 ## Usage
 
